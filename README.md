@@ -38,4 +38,4 @@ Detect bat and ball in each frame of test videos and draw a rectangular bounding
 We approached the problem statement  in two phases:
 1) Any algorithm is of no use if data is not good. So very first we converted given dataset in one of the standard object detection dataset formats like COCO. Doing this made my dataset compatible with lot of open source algorithms and frameworks. We chose **COCO** format as it involved much more complexities in implementation.
 2) We converted existing data set into coco format (ref: COCO Json Data.ipynb notebook)
-3) 
+3) Then we decided to use tune a COCO-pretrained R50-FPN Mask R-CNN model on the dataset. from Detectron2 to train on my dataset of images. And than we loaded model for inference on Videos.(ref: Model_Prediction.ipynb)
